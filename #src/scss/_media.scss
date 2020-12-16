@@ -1,0 +1,382 @@
+@media (max-width: 1440px) {
+  .our-stagings .our-stagings__slide .our-stagings__item {
+    min-width: 420px;
+  }
+
+  .first-page {
+    height: 100vh;
+  }
+
+  .header__links {
+    margin-left: 80px;
+  }
+
+  .first-page .first-page__wrapper .sliders-wrapper {
+    margin-right: 50px;
+  }
+
+  .first-page__about {
+    margin-left: 75px;
+  }
+}
+
+@media (max-width: 1420px) {
+  .theatre-about .about__wrapper .about__image {
+    display: none;
+  }
+
+  .theatre-about .about__wrapper {
+    justify-content: center;
+  }
+
+  .about__text {
+    margin-right: 15px;
+  }
+
+  .about__numbers {
+    margin-left: 15px;
+  }
+
+  .slick-slide,
+  .our-stagings .our-stagings__slide .our-stagings__item {
+    max-width: 350px !important;
+    width: 350px !important;
+    min-width: 350px;
+  }
+
+  .became-patron__contacts {
+    display: none;
+  }
+
+  .became-patron .became-patron__wrapper {
+    justify-content: center;
+  }
+
+  .became-patron .became-patron__wrapper .became-patron__form-wrapper .became-patron__contacts-mobile {
+    display: flex;
+  }
+
+  .footer .footer__wrapper {
+    margin-left: 150px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .theater-partners .theater-partners__wrapper {
+    padding-left: 150px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .first-page__slider {
+    display: none;
+  }
+  .first-page__slider-bg {
+    display: none;
+  }
+
+  .sliders-wrapper {
+    display: none;
+  }
+
+  .header .header__wrapper {
+    display: block;
+    text-align: center;
+  }
+
+  .header .header__wrapper .header__number {
+    display: inline-block;
+    margin-top: 50px;
+  }
+
+  .first-page__about {
+    margin-left: 0px;
+  }
+
+  .first-page .first-page__wrapper {
+    max-width: 775px;
+  }
+
+  .first-page .first-page__wrapper .first-page__about {
+    margin-top: 0;
+  }
+
+  .first-page {
+    height: 100vh;
+  }
+
+  .left-aside .left-aside__wrapper {
+    margin-top: calc(100vh - 380px);
+  }
+
+  .theater-partners .theater-partners__wrapper .theater-partners__item {
+    width: 33.33%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .header .header__wrapper .header__links .header__link + .header__link {
+    margin-left: 33px;
+  }
+
+  .first-page .first-page__wrapper {
+    max-width: 645px;
+  }
+
+  .theater-rewards .theater-rewards__wrapper {
+    margin-left: 150px;
+  }
+
+  .became-patron .became-patron__wrapper {
+    justify-content: flex-end;
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .about__text {
+    margin-right: 0;
+  }
+
+  .about__numbers {
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 960px) {
+  .left-aside {
+    display: none;
+  }
+
+  .about__text {
+    margin-right: 15px;
+  }
+
+  .about__numbers {
+    margin-left: 15px;
+  }
+
+  .header__links {
+    margin-left: 0;
+  }
+
+  .header__links {
+    display: none;
+  }
+
+  .header .header__wrapper {
+    text-align: end;
+  }
+
+  .header .header__wrapper .header__number {
+    margin-top: 0;
+    margin-right: 35px;
+  }
+
+  .header .header__wrapper .header__modile-wrapper {
+    display: block;
+  }
+
+  .our-stagings .our-stagings__slide {
+    margin-left: 33px;
+  }
+
+  .theater-rewards .theater-rewards__wrapper {
+    margin-left: 0px;
+  }
+
+  .theater-rewards .theater-rewards__wrapper .theater-rewards__item .theater-rewards__year {
+    margin-left: 33px;
+  }
+
+  .theater-partners .theater-partners__wrapper {
+    padding-left: 0px;
+  }
+
+  .became-patron .became-patron__wrapper {
+    justify-content: center;
+    padding-right: 0px;
+  }
+
+  .footer .footer__wrapper {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 780px) {
+  .became-patron .became-patron__wrapper .became-patron__form-wrapper .became-patron__form {
+    display: block;
+    text-align: center;
+  }
+
+  .became-patron .became-patron__wrapper .became-patron__form-wrapper .became-patron__form .became-patron__form-person .became-patron__form-conf {
+    display: none;
+  }
+
+  .became-patron .became-patron__wrapper .became-patron__form-wrapper .became-patron__form .became-patron__form-message .became-patron__form-submit {
+    margin: 0 auto;
+  }
+
+  .became-patron .became-patron__wrapper .became-patron__form-wrapper .became-patron__form .became-patron__form-message .became-patron__form-conf-mobile {
+    display: block;
+  }
+
+  .became-patron .became-patron__wrapper .became-patron__form-wrapper .became-patron__form .became-patron__form-person .became-patron__form-input {
+    margin: 0;
+    justify-content: space-around;
+  }
+
+  .became-patron__form-name,
+  .became-patron__form-contacts {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .became-patron__form-contacts {
+    margin-top: 30px;
+  }
+
+  .became-patron__form-message {
+    margin-top: 30px;
+  }
+
+  .became-patron .became-patron__wrapper .became-patron__form-wrapper .became-patron__contacts-mobile .became-patron__contacts-item {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+@media (max-width: 750px) {
+  .theatre-about .about__wrapper {
+    display: block;
+    align-items: center;
+  }
+
+  .about__text {
+    margin-right: 0;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .theatre-about .about__wrapper .about__text .about__text-text {
+    margin: 0 auto;
+  }
+
+  .about__numbers {
+    text-align: center;
+  }
+
+  .about__numbers-item {
+    display: inline-block;
+
+    & + .about__numbers-item {
+      margin-left: 60px;
+    }
+  }
+
+  .theater-partners .theater-partners__wrapper .theater-partners__item {
+    width: 50%;
+  }
+}
+
+@media (max-width: 710px) {
+  .first-page .first-page__wrapper {
+    max-width: 400px;
+    padding: 0 10px;
+  }
+
+  .first-page .first-page__wrapper .first-page__about .first-page__header {
+    font-size: 44px;
+  }
+
+  .theater-rewards .theater-rewards__wrapper .theater-rewards__item .theater-rewards__year {
+    margin-right: 50px;
+    font-size: 52px;
+  }
+
+  .theater-rewards__wrapper .theater-rewards__item .theater-rewards__reward {
+    font-size: 25px !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .theater-rewards__wrapper .theater-rewards__item .theater-rewards__reward {
+    font-size: 20px !important;
+  }
+
+  .theater-rewards .theater-rewards__wrapper .theater-rewards__item .theater-rewards__year {
+    margin-right: 20px;
+    font-size: 32px;
+    margin-left: 20px;
+  }
+
+  .theater-partners .theater-partners__wrapper .theater-partners__item {
+    width: 100%;
+  }
+
+  .footer .footer__wrapper {
+    display: block;
+  }
+
+  .footer__made-by {
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 450px) {
+  .first-page .first-page__wrapper {
+    max-width: 290px;
+  }
+
+  .about__numbers-item {
+    display: block;
+
+    & + .about__numbers-item {
+      margin-left: 0px;
+    }
+  }
+
+  .our-stagings .our-stagings__header {
+    font-size: 38px;
+  }
+
+  .became-patron__form-contacts,
+  .became-patron__form-name {
+    display: block;
+  }
+
+  .became-patron .became-patron__wrapper .became-patron__form-wrapper .became-patron__form .became-patron__form-person .became-patron__form-input {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+
+    & + .became-patron__form-input {
+      margin-top: 30px;
+    }
+  }
+
+  .became-patron .became-patron__wrapper .became-patron__form-wrapper .became-patron__form .became-patron__form-message .became-patron__form-textarea {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .became-patron .became-patron__wrapper .became-patron__form-wrapper .became-patron__contacts-mobile {
+    display: block;
+    text-align: center;
+  }
+
+  .became-patron__contacts-column {
+    & + .became-patron__contacts-column {
+      margin-top: 30px;
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  .theater-rewards .theater-rewards__wrapper {
+    margin-left: 0;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
