@@ -1622,7 +1622,7 @@ body {
   }
   .header .header__wrapper .header__number {
     display: inline-block;
-    margin-top: 50px;
+    margin-top: 20px;
   }
   .first-page__about {
     margin-left: 0px;
@@ -1696,6 +1696,7 @@ body {
   }
   .header .header__wrapper .header__modile-wrapper {
     display: block;
+    left: 17px;
   }
   .our-stagings .our-stagings__slide {
     margin-left: 33px;
@@ -1790,8 +1791,9 @@ body {
 
 @media (max-width: 710px) {
   .first-page .first-page__wrapper {
-    max-width: 400px;
+    max-width: 95vw;
     padding: 0 10px;
+    width: 90vw;
   }
   .first-page .first-page__wrapper .first-page__about .first-page__header {
     font-size: 44px;
@@ -1802,6 +1804,9 @@ body {
   }
   .theater-rewards__wrapper .theater-rewards__item .theater-rewards__reward {
     font-size: 25px !important;
+  }
+  .header .header__wrapper .header__number {
+    margin-right: 25px;
   }
 }
 
@@ -1823,11 +1828,21 @@ body {
   .footer__made-by {
     margin-top: 5px;
   }
+  .header {
+    margin: 30px 0;
+  }
+  .header .header__wrapper .header__number {
+    margin-right: 5px;
+  }
 }
 
 @media (max-width: 450px) {
   .first-page .first-page__wrapper {
-    max-width: 290px;
+    max-width: 95vw;
+    padding: 0;
+  }
+  .header .header__wrapper .header__modile-wrapper {
+    left: 6px;
   }
   .about__numbers-item {
     display: block;
@@ -1852,6 +1867,10 @@ body {
   }
   .became-patron .became-patron__wrapper .became-patron__form-wrapper .became-patron__form .became-patron__form-message .became-patron__form-textarea {
     width: 100%;
+  }
+  .first-page .first-page__wrapper .first-page__about .first-page__header {
+    margin-bottom: 10px;
+    line-height: 67px;
   }
 }
 
