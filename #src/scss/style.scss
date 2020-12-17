@@ -738,7 +738,8 @@ body {
 // Left aside
 
 .left-aside {
-  display: block;
+  display: flex;
+  align-items: center;
   position: fixed;
   left: 0;
   top: 0;
@@ -749,7 +750,7 @@ body {
   .left-aside__wrapper {
     text-align: center;
     max-width: inherit;
-    margin-top: calc(100vh - 400px);
+    margin-top: calc(50vh - 200px);
 
     .aside__text {
       white-space: nowrap;

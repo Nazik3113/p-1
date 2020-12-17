@@ -18,6 +18,38 @@
   .first-page__about {
     margin-left: 75px;
   }
+
+  .left-aside .left-aside__wrapper .aside__links {
+    display: block;
+    margin: 80px auto 30px auto;
+  }
+
+  .left-aside {
+    align-items: flex-end;
+  }
+
+  .first-page .first-page__wrapper .sliders-wrapper .first__slider-poster {
+    width: 280px;
+    height: 402px;
+  }
+
+  .first-page .first-page__wrapper .sliders-wrapper .first-page__slider-bg .slider-bg__poster {
+    width: 280px;
+    height: 402px;
+  }
+
+  .first-page .first-page__wrapper {
+    margin-top: 50px;
+  }
+
+  .first-page .first-page__wrapper .sliders-wrapper {
+    width: 280px;
+  }
+
+  .first-page .first-page__wrapper .sliders-wrapper .first-page__slider-bg {
+    width: 280px;
+    right: -20px;
+  }
 }
 
 @media (max-width: 1420px) {
@@ -35,13 +67,6 @@
 
   .about__numbers {
     margin-left: 15px;
-  }
-
-  .slick-slide,
-  .our-stagings .our-stagings__slide .our-stagings__item {
-    max-width: 350px !important;
-    width: 350px !important;
-    min-width: 350px;
   }
 
   .became-patron__contacts {
