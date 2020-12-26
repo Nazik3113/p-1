@@ -924,7 +924,7 @@ body {
   left: 0;
   top: 0;
   width: 300px;
-  min-height: 100vh;
+  height: 100%;
   background-color: #333333;
   -webkit-transform: translateX(-100%);
       -ms-transform: translateX(-100%);
