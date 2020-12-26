@@ -6,6 +6,27 @@ import 'slick-carousel';
 window.addEventListener('DOMContentLoaded', () => {
   webp();
 
+  function openAlert(btnClass) {
+    const btn = document.querySelectorAll(btnClass);
+
+    btn.forEach((button) => {
+      button.addEventListener('click', (e) => {
+        e.preventDefault();
+        alert('plug');
+      });
+    });
+  }
+  openAlert('.header__link');
+  openAlert('.header__number');
+  openAlert('.first-page__btn');
+  openAlert('.mobile-menu__links-item');
+  openAlert('.aside__link');
+  openAlert('.first__slider-poster');
+  openAlert('.slider-bg__poster');
+  openAlert('.our-stagins_search');
+  openAlert('.theater-partners__link');
+  openAlert('.became-patron__contacts-item');
+
   $('.first-page__slider').slick({
     infinite: false,
     slidesToShow: 1,
