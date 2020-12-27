@@ -789,12 +789,139 @@ body {
   font-size: 18px;
 }
 
-.header {
-  margin: 50px 0;
-  position: absolute;
+.modalbg {
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(209, 169, 84, 0.5);
+  z-index: 150;
+  display: none;
+}
+
+.modalbg--active {
+  display: block;
+}
+
+.modal {
+  width: 800px;
+  background-color: #fff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 200;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  -webkit-box-shadow: 3px 4px 8px 0 rgba(34, 60, 80, 0.2);
+          box-shadow: 3px 4px 8px 0 rgba(34, 60, 80, 0.2);
+  padding: 20px;
+  display: none;
+}
+
+.modal--active {
+  display: block;
+}
+
+.modal .modal__circle {
+  width: 100px;
+  height: 100px;
+  background-color: #d1a954;
+  border-radius: 50%;
+  top: 20px;
+  left: 20px;
+  position: relative;
+}
+
+.modal .modal__close {
+  position: absolute;
+  right: 40px;
+  top: 50px;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.modal .modal__close-line {
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+}
+
+.modal .modal__close-line:first-child {
+  -webkit-transform: translateY(18px) rotate(-45deg);
+      -ms-transform: translateY(18px) rotate(-45deg);
+          transform: translateY(18px) rotate(-45deg);
+}
+
+.modal .modal__close-line:last-child {
+  -webkit-transform: translateY(-18px) rotate(45deg);
+      -ms-transform: translateY(-18px) rotate(45deg);
+          transform: translateY(-18px) rotate(45deg);
+}
+
+.modal .modal__text {
+  color: #000;
+  font-size: 35px;
+  padding: 50px 20px 20px 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.modal .modal__title {
+  color: #000;
+  position: absolute;
+  font-weight: 200;
+  font-size: 30px;
+  top: 60px;
+  left: 70px;
+}
+
+.dropHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 125px;
+  background-color: rgba(209, 169, 84, 0.95);
+  z-index: 90;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.dropHeader--active {
+  -webkit-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+.header {
+  margin: 50px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
 }
 
 .header .header__wrapper {
@@ -920,7 +1047,7 @@ body {
 }
 
 .mobile-menu {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   width: 300px;
@@ -932,7 +1059,7 @@ body {
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  z-index: 10;
+  z-index: 110;
 }
 
 .mobile-menu.active {
@@ -952,7 +1079,7 @@ body {
 }
 
 .mobile-menu .mobile-menu__wrapper .mobile-menu__links {
-  padding-top: 100px;
+  padding-top: calc(50vh - 220px);
   margin-left: 40px;
 }
 
@@ -971,7 +1098,7 @@ body {
 }
 
 .mobile-menu .mobile-menu__wrapper .mobile-menu__socials {
-  margin-top: 90px;
+  margin-top: 10px;
   margin-left: 15px;
   width: 250px;
   display: -webkit-box;
@@ -1566,7 +1693,7 @@ body {
   }
   .left-aside .left-aside__wrapper .aside__links {
     display: block;
-    margin: 80px auto 30px auto;
+    margin: 80px auto 20px auto;
   }
   .left-aside {
     -webkit-box-align: end;
@@ -1590,6 +1717,17 @@ body {
   .first-page .first-page__wrapper .sliders-wrapper .first-page__slider-bg {
     width: 280px;
     right: -20px;
+  }
+  .header {
+    margin: 30px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+  }
+  .dropHeader {
+    height: 85px;
   }
 }
 
@@ -1668,6 +1806,12 @@ body {
   .theater-partners .theater-partners__wrapper .theater-partners__item {
     width: 33.33%;
   }
+  .dropHeader {
+    height: 95px;
+  }
+  .header {
+    margin: 20px 0;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -1744,6 +1888,12 @@ body {
   }
   .footer .footer__wrapper {
     margin-left: 0px;
+  }
+  .dropHeader {
+    height: 65px;
+  }
+  .modal {
+    width: 90vw;
   }
 }
 
@@ -1854,9 +2004,6 @@ body {
   .footer__made-by {
     margin-top: 5px;
   }
-  .header {
-    margin: 30px 0;
-  }
   .header .header__wrapper .header__number {
     margin-right: 5px;
   }
@@ -1897,6 +2044,12 @@ body {
   .first-page .first-page__wrapper .first-page__about .first-page__header {
     margin-bottom: 10px;
     line-height: 67px;
+  }
+  .modal .modal__text {
+    font-size: 25px;
+  }
+  .modal {
+    padding: 10px;
   }
 }
 

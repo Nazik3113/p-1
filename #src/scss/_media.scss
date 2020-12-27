@@ -21,7 +21,7 @@
 
   .left-aside .left-aside__wrapper .aside__links {
     display: block;
-    margin: 80px auto 30px auto;
+    margin: 80px auto 20px auto;
   }
 
   .left-aside {
@@ -49,6 +49,19 @@
   .first-page .first-page__wrapper .sliders-wrapper .first-page__slider-bg {
     width: 280px;
     right: -20px;
+  }
+
+  .header {
+    margin: 30px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+  }
+
+  .dropHeader {
+    height: 85px;
   }
 }
 
@@ -136,6 +149,14 @@
 
   .theater-partners .theater-partners__wrapper .theater-partners__item {
     width: 33.33%;
+  }
+
+  .dropHeader {
+    height: 95px;
+  }
+
+  .header {
+    margin: 20px 0;
   }
 }
 
@@ -226,6 +247,14 @@
 
   .footer .footer__wrapper {
     margin-left: 0px;
+  }
+
+  .dropHeader {
+    height: 65px;
+  }
+
+  .modal {
+    width: 90vw;
   }
 }
 
@@ -353,10 +382,6 @@
     margin-top: 5px;
   }
 
-  .header {
-    margin: 30px 0;
-  }
-
   .header .header__wrapper .header__number {
     margin-right: 5px;
   }
@@ -406,6 +431,14 @@
   .first-page .first-page__wrapper .first-page__about .first-page__header {
     margin-bottom: 10px;
     line-height: 67px;
+  }
+
+  .modal .modal__text {
+    font-size: 25px;
+  }
+
+  .modal {
+    padding: 10px;
   }
 }
 

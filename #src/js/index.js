@@ -8,24 +8,53 @@ window.addEventListener('DOMContentLoaded', () => {
 
   function openAlert(btnClass) {
     const btn = document.querySelectorAll(btnClass);
+    const modal = document.querySelector('.modal');
+    const modalBg = document.querySelector('.modalbg');
 
     btn.forEach((button) => {
       button.addEventListener('click', (e) => {
         e.preventDefault();
-        alert('plug');
+        modal.classList.add('modal--active');
+        modalBg.classList.add('modalbg--active');
       });
     });
   }
-  openAlert('.header__link');
-  openAlert('.header__number');
   openAlert('.first-page__btn');
-  openAlert('.mobile-menu__links-item');
   openAlert('.aside__link');
   openAlert('.first__slider-poster');
   openAlert('.slider-bg__poster');
   openAlert('.our-stagins_search');
   openAlert('.theater-partners__link');
-  openAlert('.became-patron__contacts-item');
+  openAlert('.became-patron__form-submit');
+
+  function toggleClases(linkClass) {
+    const links = document.querySelectorAll(linkClass);
+    links.forEach((item) => {
+      item.addEventListener('click', (e) => {
+        e.preventDefault();
+        document.querySelector('.mobile-menu').classList.remove('active');
+        document.getElementById(item.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  }
+  toggleClases('.header__link');
+  toggleClases('.mobile-menu__links-item');
+
+  function closeModal(btnClass, modalClass, modalBgClass, modalCloseClass, modalBgCloseClass) {
+    const btn = document.querySelector(btnClass);
+    const modal = document.querySelector(modalClass);
+    const modalBg = document.querySelector(modalBgClass);
+
+    btn.addEventListener('click', () => {
+      modal.classList.remove(modalCloseClass);
+      modalBg.classList.remove(modalBgCloseClass);
+    });
+    modalBg.addEventListener('click', () => {
+      modal.classList.remove(modalCloseClass);
+      modalBg.classList.remove(modalBgCloseClass);
+    });
+  }
+  closeModal('.modal__close', '.modal', '.modalbg', 'modal--active', 'modalbg--active');
 
   $('.first-page__slider').slick({
     infinite: false,
@@ -131,4 +160,12 @@ window.addEventListener('DOMContentLoaded', () => {
     translateY: 100,
     duration: 1,
   }, '-=0.8');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      document.querySelector('.dropHeader').classList.add('dropHeader--active');
+    } else {
+      document.querySelector('.dropHeader').classList.remove('dropHeader--active');
+    }
+  });
 });
