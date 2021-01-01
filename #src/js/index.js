@@ -1,11 +1,8 @@
 import $ from 'jquery';
 import gsap from 'gsap';
-import webp from './modules/webp';
 import 'slick-carousel';
 
 window.addEventListener('DOMContentLoaded', () => {
-  webp();
-
   function openAlert(btnClass) {
     const btn = document.querySelectorAll(btnClass);
     const modal = document.querySelector('.modal');
@@ -26,6 +23,8 @@ window.addEventListener('DOMContentLoaded', () => {
   openAlert('.our-stagins_search');
   openAlert('.theater-partners__link');
   openAlert('.became-patron__form-submit');
+  openAlert('.mobile-menu__socials-item');
+
 
   function toggleClases(linkClass) {
     const links = document.querySelectorAll(linkClass);

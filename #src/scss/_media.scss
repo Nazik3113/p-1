@@ -440,6 +440,14 @@
   .modal {
     padding: 10px;
   }
+
+  .became-patron__form-name {
+    flex-direction: column;
+  }
+
+  .became-patron__form-contacts {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 400px) {

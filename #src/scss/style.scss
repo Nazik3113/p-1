@@ -736,16 +736,15 @@ body {
     top: 50px;
     width: 40px;
     height: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     background-color: transparent;
     border: none;
     cursor: pointer;
     transition: all 0.5s ease;
 
     &:hover {
-      transform: rotate(90deg);
+      .modal__close-line {
+        background-color: rgba($color: red, $alpha: 0.8);
+      }
     }
   }
 
@@ -753,13 +752,14 @@ body {
     width: 100%;
     height: 2px;
     background-color: #000;
+    transition: all 0.5s ease;
 
     &:first-child {
-      transform: translateY(18px) rotate(-45deg);
+      transform: translateY(1px) rotate(-45deg);
     }
 
     &:last-child {
-      transform: translateY(-18px) rotate(45deg);
+      transform: translateY(-1px) rotate(45deg);
     }
   }
 
@@ -1045,7 +1045,7 @@ body {
       margin-right: 95px;
 
       .first__slider-poster {
-        background-image: url('../images/poster-1.jpg');
+        background-image: url('../images/poster-1.png');
         background-repeat: no-repeat;
         background-size: cover;
         width: 350px;
@@ -1090,7 +1090,7 @@ body {
         .slider-bg__poster {
           width: 350px;
           height: 490px;
-          background: linear-gradient(0deg, rgba(209, 169, 84, 0.85), rgba(209, 169, 84, 0.85)), url('../images/poster-1.jpg');
+          background: linear-gradient(0deg, rgba(209, 169, 84, 0.85), rgba(209, 169, 84, 0.85)), url('../images/poster-1.png');
           background-repeat: no-repeat;
           background-size: cover;
         }
@@ -1503,6 +1503,14 @@ body {
         }
       }
     }
+  }
+
+  .became-patron__form-name {
+    display: flex;
+  }
+
+  .became-patron__form-contacts {
+    display: flex;
   }
 }
 

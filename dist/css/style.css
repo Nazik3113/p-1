@@ -842,16 +842,6 @@ body {
   top: 50px;
   width: 40px;
   height: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -860,28 +850,29 @@ body {
   transition: all 0.5s ease;
 }
 
-.modal .modal__close:hover {
-  -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-          transform: rotate(90deg);
+.modal .modal__close:hover .modal__close-line {
+  background-color: rgba(255, 0, 0, 0.8);
 }
 
 .modal .modal__close-line {
   width: 100%;
   height: 2px;
   background-color: #000;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .modal .modal__close-line:first-child {
-  -webkit-transform: translateY(18px) rotate(-45deg);
-      -ms-transform: translateY(18px) rotate(-45deg);
-          transform: translateY(18px) rotate(-45deg);
+  -webkit-transform: translateY(1px) rotate(-45deg);
+      -ms-transform: translateY(1px) rotate(-45deg);
+          transform: translateY(1px) rotate(-45deg);
 }
 
 .modal .modal__close-line:last-child {
-  -webkit-transform: translateY(-18px) rotate(45deg);
-      -ms-transform: translateY(-18px) rotate(45deg);
-          transform: translateY(-18px) rotate(45deg);
+  -webkit-transform: translateY(-1px) rotate(45deg);
+      -ms-transform: translateY(-1px) rotate(45deg);
+          transform: translateY(-1px) rotate(45deg);
 }
 
 .modal .modal__text {
@@ -1192,7 +1183,7 @@ body {
 }
 
 .first-page .first-page__wrapper .sliders-wrapper .first__slider-poster {
-  background-image: url("../images/poster-1.jpg");
+  background-image: url("../images/poster-1.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 350px;
@@ -1240,9 +1231,9 @@ body {
 .first-page .first-page__wrapper .sliders-wrapper .first-page__slider-bg .slider-bg__poster {
   width: 350px;
   height: 490px;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(209, 169, 84, 0.85)), to(rgba(209, 169, 84, 0.85))), url("../images/poster-1.jpg");
-  background: -o-linear-gradient(bottom, rgba(209, 169, 84, 0.85), rgba(209, 169, 84, 0.85)), url("../images/poster-1.jpg");
-  background: linear-gradient(0deg, rgba(209, 169, 84, 0.85), rgba(209, 169, 84, 0.85)), url("../images/poster-1.jpg");
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(209, 169, 84, 0.85)), to(rgba(209, 169, 84, 0.85))), url("../images/poster-1.png");
+  background: -o-linear-gradient(bottom, rgba(209, 169, 84, 0.85), rgba(209, 169, 84, 0.85)), url("../images/poster-1.png");
+  background: linear-gradient(0deg, rgba(209, 169, 84, 0.85), rgba(209, 169, 84, 0.85)), url("../images/poster-1.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1669,6 +1660,18 @@ body {
   margin-top: 25px;
 }
 
+.became-patron .became-patron__form-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.became-patron .became-patron__form-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .footer .footer__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2060,6 +2063,18 @@ body {
   .modal {
     padding: 10px;
   }
+  .became-patron__form-name {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .became-patron__form-contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 @media (max-width: 400px) {
@@ -2078,142 +2093,4 @@ body {
     padding-top: 80px;
     padding-bottom: 80px;
   }
-}
-
-@supports (-webkit-appearance:none){
-.first-page{background-image:url("../images/first-page-bg.webp")}
-.first-page .first-page__wrapper .sliders-wrapper .first__slider-poster{background-image:url("../images/poster-1.webp")}
-.first-page .first-page__wrapper .sliders-wrapper .first-page__slider-bg .slider-bg__poster{background:-webkit-gradient(linear, left bottom, left top, from(rgba(209, 169, 84, 0.85)), to(rgba(209, 169, 84, 0.85))), url("../images/poster-1.webp")}
-.first-page .first-page__wrapper .sliders-wrapper .first-page__slider-bg .slider-bg__poster{background:-o-linear-gradient(bottom, rgba(209, 169, 84, 0.85), rgba(209, 169, 84, 0.85)), url("../images/poster-1.webp")}
-.first-page .first-page__wrapper .sliders-wrapper .first-page__slider-bg .slider-bg__poster{background:linear-gradient(0deg, rgba(209, 169, 84, 0.85), rgba(209, 169, 84, 0.85)), url("../images/poster-1.webp")}
-.theatre-about .about__wrapper .about__image{background-image:url("../images/theathe-about-photo.webp")}
-.theater-rewards .theater-rewards__wrapper{background-image:url("../images/theatre-rating-bg.webp")}
-}
-
- @media screen and (max-width: 800px) and (orientation: landscape), screen and (max-height: 300px){
-
-@supports (-webkit-appearance:none){
-
-}
-
-}
-
- @media all and (max-width: 900px){
-
-@supports (-webkit-appearance:none){
-
-}
-
-}
-
- @media (max-width: 1440px){
-
-@supports (-webkit-appearance:none){
-
-}
-
-}
-
- @media (max-width: 1420px){
-
-@supports (-webkit-appearance:none){
-
-}
-
-}
-
- @media (max-width: 1350px){
-
-@supports (-webkit-appearance:none){
-
-}
-
-}
-
- @media (max-width: 1280px){
-
-@supports (-webkit-appearance:none){
-
-}
-
-}
-
- @media (max-width: 1100px){
-
-@supports (-webkit-appearance:none){
-
-}
-
-}
-
- @media (max-width: 1000px){
-
-@supports (-webkit-appearance:none){
-
-}
-
-}
-
- @media (max-width: 960px){
-
-@supports (-webkit-appearance:none){
-
-}
-
-}
-
- @media (max-width: 780px){
-
-@supports (-webkit-appearance:none){
-
-}
-
-}
-
- @media (max-width: 750px){
-
-@supports (-webkit-appearance:none){
-
-}
-
-}
-
- @media (max-width: 710px){
-
-@supports (-webkit-appearance:none){
-
-}
-
-}
-
- @media (max-width: 500px){
-
-@supports (-webkit-appearance:none){
-
-}
-
-}
-
- @media (max-width: 450px){
-
-@supports (-webkit-appearance:none){
-
-}
-
-}
-
- @media (max-width: 400px){
-
-@supports (-webkit-appearance:none){
-
-}
-
-}
-
- @media (max-width: 370px){
-
-@supports (-webkit-appearance:none){
-
-}
-
 }
