@@ -158,6 +158,14 @@
   .header {
     margin: 20px 0;
   }
+
+  .left-aside .left-aside__wrapper .aside__links {
+    margin: 80px auto 10px auto;
+  }
+
+  .left-aside {
+    padding-bottom: 0px;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -217,6 +225,7 @@
   .header .header__wrapper .header__number {
     margin-top: 0;
     margin-right: 35px;
+    opacity: 1;
   }
 
   .header .header__wrapper .header__modile-wrapper {
@@ -255,6 +264,16 @@
 
   .modal {
     width: 90vw;
+  }
+
+  .first-page .first-page__wrapper .first-page__about .first-page__header {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+
+  .first-page .first-page__wrapper .first-page__about .first-page__text {
+    opacity: 1;
+    transform: translateY(0%);
   }
 }
 
